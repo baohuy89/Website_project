@@ -11,7 +11,7 @@ function HomeComponent() {
                     <button type="button" data-bs-target="#demo" data-bs-slide-to={1} />
                     <button type="button" data-bs-target="#demo" data-bs-slide-to={2} />
                 </div>
-                {/* The slideshow/carousel */}
+           
                 <div className="">
                     <Carousel>
                         {CaroselHome &&
@@ -26,7 +26,7 @@ function HomeComponent() {
                             ))}
                     </Carousel>
                 </div>
-                {/* Left and right controls/icons */}
+         
             </div>
             <div className="cate">
                 <div className="container">

@@ -15,13 +15,13 @@ function App() {
             {/* <DetailComponent /> */}
             <AppContext>
                 <Routes>
-                    <Route path="/" element={<BaseComponent />}>
+                    <Route path="/Website_project/" element={<BaseComponent />}>
                         <Route index element={<HomeComponent />} />
-                        <Route path="/product" element={<ProductComponent />} />
-                        <Route path="/shopping-cart" element={<ShoppingCartComponent />} />
-                        <Route path="/contact-us" element={<ContactusComponent />} />
-                        <Route path="/detail/:id" element={<DetailComponent />} />
-                        <Route path="/CustomerCart" element={<CustommerComponent />} />
+                        <Route path="/Website_project/product" element={<ProductComponent />} />
+                        <Route path="/Website_project/shopping-cart" element={<ShoppingCartComponent />} />
+                        <Route path="/Website_project/contact-us" element={<ContactusComponent />} />
+                        <Route path="/Website_project/detail/:id" element={<DetailComponent />} />
+                        <Route path="/Website_project/CustomerCart" element={<CustommerComponent />} />
                     </Route>
                 </Routes>
             </AppContext>

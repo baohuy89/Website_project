@@ -34,7 +34,7 @@ function ShoppingCartComponent() {
     return formattedAmount.replace("₫", "VNĐ");
   }
   const handleCustomer = ()=>{
-    customer("/CustomerCart")
+    customer("/Website_project/CustomerCart")
   }
 
     return (

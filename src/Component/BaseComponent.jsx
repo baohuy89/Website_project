@@ -12,7 +12,7 @@ function BaseComponent() {
     const [searchass, setseachss] = useState([]);
     const cardSearchRef = useRef(null);
     const [searchNotFound, setSearchNotFound] = useState(false);
-    const number = 1;
+    
     const { Dataproduct } = useContext(Context);
     const handleSearch = (e) => {
         e.preventDefault();
@@ -56,17 +56,17 @@ function BaseComponent() {
                     <div className="collapse navbar-collapse" id="mynavbar">
                         <ul className="navbar-nav ">
                             <li className="nav-item">
-                                <Link to={"/"} className="nav-link">
+                                <Link to={"/Website_project/"} className="nav-link">
                                     Trang Chủ
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link to={"/product"} className="nav-link">
+                                <Link to={"/Website_project/product"} className="nav-link">
                                     Sản Phẩm
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link to={"/contact-us"} className="nav-link">
+                                <Link to={"/Website_project/contact-us"} className="nav-link">
                                     Liên hệ với chúng tôi
                                 </Link>
                             </li>
@@ -75,7 +75,7 @@ function BaseComponent() {
                     <form className="nav-icon">
                         <Form.Control placeholder="Search..." onChange={handleSearch} value={searchproduct} />
 
-                        <Link to={"/shopping-cart"}>
+                        <Link to={"/Website_project/shopping-cart"}>
                             <i className="fa-solid fa-cart-shopping" />
                         </Link>
                     </form>
