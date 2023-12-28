@@ -1,8 +1,8 @@
 import { Link, Outlet } from "react-router-dom";
 import Footer from "./Footer";
 import { ImgHead } from "./ImgComponent/ImgComponent";
-import { useState,useEffect,useContext,useRef } from "react";
-import { Form ,Col, Row,} from "react-bootstrap";
+import { useState, useEffect, useContext, useRef } from "react";
+import { Form, Col, Row } from "react-bootstrap";
 import SearchComponent from "./SearchComponent";
 import "../do_an/style.css";
 import { Context } from "./Appcontext";
@@ -12,28 +12,25 @@ function BaseComponent() {
     const [searchass, setseachss] = useState([]);
     const cardSearchRef = useRef(null);
     const [searchNotFound, setSearchNotFound] = useState(false);
-          
-        const { Dataproduct } = useContext(Context);
-        const handleSearch = (e) => {
-            e.preventDefault(); 
-            setsearchproduct(e.target.value);
-            const filteredProducts = Dataproduct.flatMap((value) => value.product.filter((item) => item.name.toLowerCase().includes(searchproduct.toLowerCase())));
-            setseachss(filteredProducts);
-            setSearchNotFound(filteredProducts.length === 0);
-        };
-        useEffect(() => {
-            if (searchproduct) {
-                const timeout = setTimeout(() => {}, 1000);
-                return () => {
-                    clearTimeout(timeout);
-                };
-            }
-        }, [searchproduct]);
-    
-       
-
-  
-   
+    const number = 1;
+    const { Dataproduct } = useContext(Context);
+    const handleSearch = (e) => {
+        e.preventDefault();
+        setsearchproduct(e.target.value);
+        const filteredProducts = Dataproduct.flatMap((value) =>
+            value.product.filter((item) => item.name.toLowerCase().includes(searchproduct.toLowerCase()))
+        );
+        setseachss(filteredProducts);
+        setSearchNotFound(filteredProducts.length === 0);
+    };
+    useEffect(() => {
+        if (searchproduct) {
+            const timeout = setTimeout(() => {}, 1000);
+            return () => {
+                clearTimeout(timeout);
+            };
+        }
+    }, [searchproduct]);
 
     return (
         <>
@@ -52,7 +49,7 @@ function BaseComponent() {
                     <a className="navbar-brand" href="#" onClick={(e) => e.preventDefault()}>
                         {ImgHead && ImgHead.map((value, key) => <img key={key} src={value.img} alt="" />)}
                     </a>
-                  
+
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                         <span className="navbar-toggler-icon" />
                     </button>
@@ -76,11 +73,8 @@ function BaseComponent() {
                         </ul>
                     </div>
                     <form className="nav-icon">
-                      
-                      <Form.Control placeholder="Search..." onChange={handleSearch} value={searchproduct} />
-                
-                       
-                                   
+                        <Form.Control placeholder="Search..." onChange={handleSearch} value={searchproduct} />
+
                         <Link to={"/shopping-cart"}>
                             <i className="fa-solid fa-cart-shopping" />
                         </Link>
@@ -90,7 +84,6 @@ function BaseComponent() {
 
             {searchproduct.length > 0 && (
                 <>
-                    
                     <div className="Card-search" ref={cardSearchRef}>
                         <Row>
                             <h4>Sản phẩm</h4>
