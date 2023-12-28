@@ -15,8 +15,8 @@ function App() {
             {/* <DetailComponent /> */}
             <AppContext>
                 <Routes>
-                    <Route element={<BaseComponent />}>
-                        <Route path="/Website_project/" index element={<HomeComponent />} />
+                    <Route path="/Website_project/" element={<BaseComponent />}>
+                        <Route index element={<HomeComponent />} />
                         <Route path="/Website_project/product" element={<ProductComponent />} />
                         <Route path="/Website_project/shopping-cart" element={<ShoppingCartComponent />} />
                         <Route path="/Website_project/contact-us" element={<ContactusComponent />} />

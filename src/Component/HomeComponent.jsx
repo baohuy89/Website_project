@@ -2,6 +2,7 @@ import { Carousel } from "react-bootstrap";
 import "../do_an/style.css";
 import { CaroselHome, cateHome, healthyHome, bannerHome, newsHome } from "../Component/ImgComponent/ImgComponent";
 import "../App.css";
+
 function HomeComponent() {
     return (
         <>
