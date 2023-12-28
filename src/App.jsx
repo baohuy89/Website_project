@@ -6,7 +6,7 @@ import DetailComponent from "./Component/DetailComponent";
 import { Routes, Route } from "react-router-dom";
 import BaseComponent from "./Component/BaseComponent";
 import CustommerComponent from "./Component/CustommerComponent";
-import AppContext from "./Component/Appcontext";
+import AppContext from "./Component/AppContext";
 
 function App() {
     return (

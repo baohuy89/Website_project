@@ -1,20 +1,18 @@
 import { useContext, useEffect, useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import "../do_an/detail.css";
-import { Context } from "./Appcontext";
+import { Context } from "./AppContext";
 import ItemComponent from "./ItemComponent";
 import { useLocation } from "react-router-dom";
 
 function DetailComponent() {
-    const { handleAddcart} = useContext(Context);
+    const { handleAddcart } = useContext(Context);
 
     const [arrayproduct, setarrayproduct] = useState([]);
     const location = useLocation();
     // const [numQuantity, setNumQuantity] = useState(1);
     // const handleUpdatequantity = (type, product) => {
-        
-        
-      
+
     //     if (type == "minus") {
     //         if (product.quantity > 1) {
     //             product.quantity -= 1;
@@ -24,7 +22,7 @@ function DetailComponent() {
     //     }
 
     //     setNumQuantity(product.quantity);
-    
+
     // };
 
     useEffect(() => {
@@ -37,11 +35,11 @@ function DetailComponent() {
 
     const formatCurrency = (amount) => {
         const formattedAmount = amount.toLocaleString("vi-VN", {
-          style: "currency",
-          currency: "VND",
+            style: "currency",
+            currency: "VND",
         });
         return formattedAmount.replace("₫", "VNĐ");
-      }
+    };
     return (
         <>
             <meta charSet="UTF-8" />
