@@ -1,0 +1,91 @@
+.product-item {
+    width: calc(100% - 20px);
+}
+.nameMenu {
+    margin-left: 10%;
+}
+.select-list {
+    display: inline-block;
+    margin: 20px;
+    width: 10%;
+}
+.list-fruit {
+    text-decoration: none;
+}
+.cate .card img {
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.filterProduct {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+.listLq {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.42);
+    padding: 50px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.ProductType h3 {
+    font-size: 16px;
+}
+.ProductType .card {
+    margin: 14px 0;
+}
+.content_top .info .title {
+    font-size: 18px;
+}
+
+.listLq button {
+    margin: 15px 0;
+}
+.ProductType {
+    width: calc(100% - 20px);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.5s;
+    text-decoration: none;
+
+    --bs-card-spacer-y: 1rem;
+    --bs-card-spacer-x: 1rem;
+    --bs-card-title-spacer-y: 0.5rem;
+    --bs-card-title-color: ;
+    --bs-card-subtitle-color: ;
+    --bs-card-border-width: var(--bs-border-width);
+    --bs-card-border-color: var(--bs-border-color-translucent);
+    --bs-card-border-radius: var(--bs-border-radius);
+    --bs-card-box-shadow: ;
+    --bs-card-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+    --bs-card-cap-padding-y: 0.5rem;
+    --bs-card-cap-padding-x: 1rem;
+    --bs-card-cap-bg: rgba(var(--bs-body-color-rgb), 0.03);
+    --bs-card-cap-color: ;
+    --bs-card-height: ;
+    --bs-card-color: ;
+    --bs-card-bg: var(--bs-body-bg);
+    --bs-card-img-overlay-padding: 1rem;
+    --bs-card-group-margin: 0.75rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: var(--bs-card-height);
+    color: var(--bs-body-color);
+    word-wrap: break-word;
+    background-color: var(--bs-card-bg);
+    background-clip: border-box;
+    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+    border-radius: var(--bs-card-border-radius);
+}
+

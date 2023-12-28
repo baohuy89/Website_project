@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+img {
+    width: 100%;
+    display: block;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f2f2f6;
+    --primary-color: #2d2a6e;
+    --secondary-color: #96ae00;
+}
+.navbar-brand img {
+    padding-right: 20px;
+}
+.navbar {
+    border-bottom: 1px solid rgba(139, 133, 133, 0.129);
+}
+.navbar .nav-link {
+    color: var(--primary-color);
+    font-weight: 600;
+    /* margin-right: 20px; */
+}
+.navbar .nav-link:hover {
+    color: green;
+}
+.nav-icon a {
+    margin-right: 20px;
+    background-color: rgb(215, 209, 209);
+    padding: 12px;
+    border-radius: 10px;
+    color: #2d2a6e;
+}
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: white;
+    background-color: gray;
+    background-size: 100%;
+}
+
+.cate .card {
+    margin-bottom: 20px;
+    padding: 20px 20px 0;
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+    transition: 0.5s;
+}
+.cate .card img {
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.cate .card h4 {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+.nameMenu input {
+    padding-left: 5px;
+}
+.nameMenu button {
+    margin-left: 20px;
+    width: 10%;
+    height: 30px;
+    border: 1px rgba(107, 107, 109, 0.582);
+}
+.nameMenu button:hover {
+    background-color: #96ae00;
+}
+.cate .card p {
+    text-align: center;
+    color: gray;
+}
+.cate .card:hover {
+    transform: translateY(-5%);
+}
+
+.list-fruit {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.42);
+    padding: 50px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.list-fruit .card {
+    width: calc(25% - 20px);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.list-fruit .card:hover {
+    transform: translateY(-10px);
+}
+.list-fruit .card h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+.list-fruit .card p {
+    color: #ff8d00;
+    font-weight: 600;
+    text-decoration: none;
+}
+.product-action {
+    border: 1px none blanchedalmond;
+}
+
+.btn-add-to-cart {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-add-to-favorite {
+    background-color: #ccc;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.footer {
+    margin-top: 120px;
+    background-color: #2d2a6e;
+    color: #b0afcc;
+    font-size: 14px;
+    padding: 20px 0;
+}
+.footer h3 {
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+.footer .email a {
+    color: #96ae00;
+    font-weight: 700;
+}
+.footer .social-media h4 {
+    margin-top: 40px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.footer .social-media .icon i {
+    color: white;
+    padding-right: 10px;
+}
+.footer .info ul {
+    padding-left: 0;
+}
+.footer .info li {
+    text-align: left;
+    margin-bottom: 6px;
+    list-style: none;
+}
+.footer .info li span {
+    color: white;
+}
+
+.footer .info-1 ul {
+    padding-left: 0;
+}
+.footer .info-1 li {
+    list-style: none;
+    margin-bottom: -12px;
+    transition: 0.5s;
+}
+.footer .info-1 li:hover {
+    transform: translateX(3%);
+}
+.footer form {
+    background-color: white;
+    padding: 12px;
+    margin-top: 30px;
+    border-radius: 10px;
+    position: relative;
+}
+.footer form input {
+    border: none;
+    font-size: 16px;
+}
+.footer form button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #96ae00;
+    color: white;
+    border-radius: 10px;
+    width: 32%;
+    height: 50px;
+    border: none;
+    font-size: 16px;
+}
+.footer form button:hover {
+    background-color: #2d2a6e;
+}
+.product-action button {
+    height: 40px;
+    width: 45%;
+    border: 1px solid gray;
+    transition: 0.5s;
+
+    height: 30px;
+    width: 100%;
+}
+.product-action button:hover {
+    background-color: #cdd1ad;
+}
+
+.card {
+    width: 100%;
+}
+
+.list-fruit .card {
+    width: calc(50% - 20px);
+}
+
+@media (min-width: 768px) {
+    .card {
+        max-width: 400px;
+    }
+
+    .list-fruit .card {
+        width: calc(50% - 20px);
+    }
+}
+@media (max-width: 449px) {
+    .list-fruit .card {
+        width: calc(50% - 15px);
+    }
+}
+@media (max-width: 438px) {
+    .list-fruit .card {
+        width: calc(100% - 20px);
+    }
+}
+@media (max-width: 1106px) {
+    input {
+        width: 30%;
+    }
+}
+@media (min-width: 992px) {
+    .card {
+        max-width: 600px;
+    }
+
+    .list-fruit .card {
+        width: calc(25% - 20px);
+    }
+}
+
+@media (min-width: 768px) {
+    .footer {
+        padding: 40px 0;
+    }
+
+    .footer .container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    .footer .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer .col-lg-3 {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+}

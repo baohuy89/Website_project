@@ -1,0 +1,99 @@
+
+.main .row .head {
+    margin: 20px;
+    text-align: center;
+}
+.main .row .head h2 {
+    font-weight: 600;
+}
+.main .row .head p {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.main .row .from {
+    background-color: white;
+    border-radius: 20px;
+}
+.main .row .from1 h2 {
+    font-size: 18px;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+.main .row .from1 input {
+    margin-left: 20px;
+    width: 80%;
+    height: 40px;
+    padding-left: 10px;
+}
+.main .row .from2 h2 {
+    font-size: 18px;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+.main .row .from2 input {
+    margin-left: 20px;
+    width: 80%;
+    height: 100px;
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+.main .row .from3 button {
+    margin-left: 20px;
+    border-radius: 10px;
+    width: 28%;
+    text-align: center;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #96ae00;
+    color: white;
+    transition: 0.5s;
+}
+.main .row .from3 button:hover {
+    background-color: #2d2a6e;
+}
+
+.main .row .address .gps {
+    background-color: white;
+    border-radius: 20px;
+    margin: 20px;
+    height: 50px;
+}
+.main .row .address .gps i {
+    margin-left: 20px;
+    padding-top: 20px;
+    gap: 20px;
+}
+.main .row .address .gps a {
+    margin-left: 5px;
+    color: #2d2a6e;
+    text-decoration: none;
+    font-size: 16px;
+}
+.main .row .address .gps:hover i {
+    color: #96ae00;
+}
+
+
+@media (min-width: 768px) {
+    .footer {
+        padding: 40px 0;
+    }
+
+    .footer .container {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    .footer .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer .col-lg-3 {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+}
