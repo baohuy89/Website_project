@@ -5,7 +5,6 @@ import ShoppingCartComponent from "./Component/ShoppingCartComponent";
 import DetailComponent from "./Component/DetailComponent";
 import { Routes, Route } from "react-router-dom";
 import BaseComponent from "./Component/BaseComponent";
-import AppContext from "./Component/Appcontext";
 import CustommerComponent from "./Component/CustommerComponent";
 
 function App() {
