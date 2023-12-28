@@ -4,7 +4,7 @@ import "../do_an/product.css";
 import "../App.css";
 import { useContext } from "react";
 import { Context } from "./Appcontext";
-// import { Col, Container, Row } from "react-bootstrap";
+
 
 ItemComponent.propTypes = {
     value: PropTypes.object,
