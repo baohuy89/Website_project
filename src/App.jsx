@@ -6,6 +6,7 @@ import DetailComponent from "./Component/DetailComponent";
 import { Routes, Route } from "react-router-dom";
 import BaseComponent from "./Component/BaseComponent";
 import CustommerComponent from "./Component/CustommerComponent";
+import AppContext from "./Component/Appcontext";
 
 function App() {
     return (
@@ -14,8 +15,8 @@ function App() {
             {/* <DetailComponent /> */}
             <AppContext>
                 <Routes>
-                    <Route path="/Website_project/" element={<BaseComponent />}>
-                        <Route index element={<HomeComponent />} />
+                    <Route element={<BaseComponent />}>
+                        <Route path="/Website_project/" index element={<HomeComponent />} />
                         <Route path="/Website_project/product" element={<ProductComponent />} />
                         <Route path="/Website_project/shopping-cart" element={<ShoppingCartComponent />} />
                         <Route path="/Website_project/contact-us" element={<ContactusComponent />} />
