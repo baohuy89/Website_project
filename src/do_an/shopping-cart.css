@@ -343,7 +343,7 @@ input {
     input {
         width: 50%;
     }
-    .content_bot .price span {
+    .cart-item .item_content .content_bot .price {
         font-size: 16px;
     }
 }
@@ -356,38 +356,38 @@ input {
     input {
         width: 50%;
     }
-    .content_bot .price span {
+    .cart-item .item_content .content_bot .price {
         font-size: 16px;
     }
 }
 @media (max-width: 559px) {
     .box-cart {
-        width: 90%;
+        width: 80%;
     }
 
     input {
         width: 50%;
     }
-    .content_bot .price span {
+    .cart-item .item_content .content_bot .price {
         font-size: 12px;
     }
 }
 
 @media (max-width: 490px) {
     .box-cart {
-        width: 100%;
+        width: 80%;
     }
 
     input {
         width: 40%;
     }
-    .content_bot .price span {
+    .cart-item .item_content .content_bot .price {
         font-size: 10px;
     }
 }
 @media (max-width: 490px) {
     .box-cart {
-        width: 100%;
+        width: 75%;
     }
 
     .cart-item .item_content {
@@ -398,13 +398,13 @@ input {
     input {
         width: 40%;
     }
-    .content_bot .price span {
-        font-size: 10px;
+    .cart-item .item_content .content_bot .price {
+        font-size: 12px;
     }
 }
 @media (max-width: 450px) {
     .footer {
-        width: 120%;
+        width: 115%;
     }
     .box-cart {
         width: 120%;
@@ -419,10 +419,16 @@ input {
     input {
         width: 40%;
     }
-    .content_bot .price span {
-        font-size: 10px;
+    .footer form button {
+        right: 10px;
     }
     .cart-item .item_content .content_bot {
         margin-top: 15px;
+        font-size: 10px;
+    }
+}
+@media (max-width: 426px) {
+    .footer {
+        width: 125%;
     }
 }

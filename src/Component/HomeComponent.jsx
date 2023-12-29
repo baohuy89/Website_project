@@ -12,22 +12,18 @@ function HomeComponent() {
                     <button type="button" data-bs-target="#demo" data-bs-slide-to={1} />
                     <button type="button" data-bs-target="#demo" data-bs-slide-to={2} />
                 </div>
-           
+
                 <div className="">
                     <Carousel>
                         {CaroselHome &&
                             CaroselHome.map((value, key) => (
                                 <Carousel.Item key={key}>
                                     <img src={value.img} alt="" />
-                                    <Carousel.Caption>
-                                        <h3>{value.title}</h3>
-                                        <h2>{value.titleImg}</h2>
-                                    </Carousel.Caption>
+                                    <Carousel.Caption></Carousel.Caption>
                                 </Carousel.Item>
                             ))}
                     </Carousel>
                 </div>
-         
             </div>
             <div className="cate">
                 <div className="container">

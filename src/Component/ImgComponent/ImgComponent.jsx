@@ -26,13 +26,13 @@ export const CaroselHome = [
     {
         img: Slide1,
         title: "Welcome to Our Farm",
-        titleImg: " The Besth Health skin.",
+        titleImg: " The Besth Health.",
         content: "  Presentation matters. Our fresh Vietnamese vegetable rolls look good and  taste even better.",
     },
     {
         img: Slide2,
         title: "Pure and Nature 100%",
-        titleImg: " The Best Healthy stomach  .",
+        titleImg: " The Best Healthy.",
         content: "Presentation matters. Our fresh Vietnamese vegetable rolls look good and  taste even better.",
     },
     {

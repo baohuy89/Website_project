@@ -21,7 +21,9 @@ export default function AppContext({ children }) {
     }, [history]);
       
     
-   
+
+
+    
 
 
     const handleAddcart = (value) => {

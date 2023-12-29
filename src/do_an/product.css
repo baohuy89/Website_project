@@ -85,7 +85,10 @@ body {
 .cate .card:hover {
     transform: translateY(-5%);
 }
-
+.nameMenu .select-list {
+    width: 20%;
+    height: 40px;
+}
 .list-fruit {
     display: flex;
     gap: 20px;
@@ -294,5 +297,16 @@ body {
     .footer .col-lg-3 {
         width: 48%;
         margin-bottom: 20px;
+    }
+}
+@media (max-width: 520px) {
+    .nameMenu .select-list {
+        width: 30%;
+        height: 40px;
+    }
+}
+@media (max-width: 448px) {
+    .footer form button {
+        right: 24px;
     }
 }
