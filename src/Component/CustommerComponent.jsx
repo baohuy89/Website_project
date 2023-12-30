@@ -31,7 +31,7 @@ function CustommerComponent() {
             email: "",
             orderDetails: "",
         });
-        toast.success("Ban da them hang thanh cong");
+        toast.success("Bạn đã đặt hàng thành công");
         navigate("/Website_project/thank-you"); // Change from history.push to navigate
     };
 
