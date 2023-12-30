@@ -72,17 +72,19 @@ function BaseComponent() {
             <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-            <nav className="navbar navbar-expand-md .fixed-top ">
+             <nav className="navbar navbar-expand-md .fixed-top ">
+           
                 <div className="container">
                     <a className="navbar-brand" href="#">
                         {ImgHead && ImgHead.map((value, key) => <img key={key} src={value.img} alt="" />)}
                     </a>
 
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                         <span className="navbar-toggler-icon"></span>
-                    </button>
-
+                    </button> 
+                       
                     <div className="collapse navbar-collapse" id="mynavbar">
+                   
                         <ul className="navbar-nav">
                             <li className="nav-item">
                                 <Link to={"/Website_project/"} className="nav-link">
@@ -109,7 +111,9 @@ function BaseComponent() {
                         </Link>
                     </form>
                 </div>
-            </nav>
+            </nav> 
+           
+              
             {searchproduct.length > 0 && (
                 <div className="Card-search" ref={cardSearchRef}>
                     <Row>
