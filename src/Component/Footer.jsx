@@ -68,14 +68,7 @@ function Footer() {
                             <div className="col-lg-3">
                                 <h3>BẢN TIN CỦA CHÚNG TÔI </h3>
                                 <p>Đăng ký vào danh sách gửi thư của Orfarm để nhận thông tin cập nhật về hàng mới đến và các thông tin khác.</p>
-                                <form>
-                                    <div className="row">
-                                        <div className="col">
-                                            <input type="text" className="form-control" placeholder="Your email address..." name="email" />
-                                            <button>Subscribe</button>
-                                        </div>
-                                    </div>
-                                </form>
+                                
                             </div>
                         </div>
                     </div>
