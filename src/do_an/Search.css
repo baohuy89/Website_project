@@ -1,60 +1,40 @@
-.card-container .card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s;
-    margin: 10px;
-    width: 200px;
-}
-
-.card-container .image-detail {
-    cursor: pointer;
-}
-
-.card-container .image-detail img {
-    width: 100%;
-    height: auto;
-}
-
-.card-container .card h3 {
-    text-align: center;
-    margin: 10px 0;
-}
-
-.card-container .card p {
-    text-align: center;
-    font-weight: bold;
-    color: #333;
-}
-
-.card-container .product-action {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.card-container .product-action button {
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.card-container .product-action button:hover {
-    background-color: #45a049;
-}
-
-/* Add a container for the cards to create a grid layout */
-.card-container {
+.container-card {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
 }
-.card-container .card {
-    width: calc(25% - 20px);
+.container-card .card h3 {
+    font-size: 15px;
+}
+.container-card .card {
+    flex: 1;
+    max-width: 300px; /* Set a maximum width for the card */
+    padding: 20px; /* Adjust padding as needed */
+    border: 1px solid #ddd; /* Optional: Add a border for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow for the card */
+    margin-bottom: 10px;
+}
+
+.image-detail img {
+    width: 100%; /* Make the image inside image-detail div fill its container */
+    height: auto; /* Maintain the aspect ratio of the image */
+}
+
+.container-card .product-action {
+    margin-top: 15px; /* Adjust margin as needed */
+}
+
+/* Add any other styling you want for the card and its components */
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .container-card {
+        justify-content: flex-start; /* Change to flex-start for smaller screens */
+    }
+
+    .container-card .card {
+        flex-basis: 100%; /* Make cards take up 100% width on smaller screens */
+    }
 }

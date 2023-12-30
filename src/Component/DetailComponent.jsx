@@ -10,20 +10,7 @@ function DetailComponent() {
 
     const [arrayproduct, setarrayproduct] = useState([]);
     const location = useLocation();
-    // const [numQuantity, setNumQuantity] = useState(1);
-    // const handleUpdatequantity = (type, product) => {
-
-    //     if (type == "minus") {
-    //         if (product.quantity > 1) {
-    //             product.quantity -= 1;
-    //         }
-    //     } else {
-    //         product.quantity += 1;
-    //     }
-
-    //     setNumQuantity(product.quantity);
-
-    // };
+   
 
     useEffect(() => {
         fetch("https://6561f5c3dcd355c0832466d9.mockapi.io/api/Products")

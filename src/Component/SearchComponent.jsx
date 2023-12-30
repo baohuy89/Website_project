@@ -25,8 +25,8 @@ function SearchComponent({ value, searchDetail }) {
     };
     return (
         <>
-            <div className="card-container">
-                <div className="card" >
+            <div className="container-card">
+                <div className="card">
                     <div className="image-detail" onClick={() => handledetail(value)}>
                         <img src={value.image} alt={value.id} />
                     </div>

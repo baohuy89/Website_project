@@ -64,9 +64,7 @@ function ProductComponent() {
 
                 <div>
                     <div className="nameMenu" style={{ width: "100%" }}>
-                        {/* <h3>Tìm kiếm sản phẩm</h3>
-                        <input type="text" placeholder="Tìm kiếm sản phẩm" />
-                        <button>Tìm kiếm</button> */}
+                       
                         {idCate == 0 ? (
                             <select className="select-list" onChange={(e) => setIDSelect(e.target.value)}>
                                 <option value={0}>Rau củ tươi</option>

@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState ,} from "react";
 import PropTypes from "prop-types";
-
+import { toast } from "react-toastify";
 export const Context = createContext();
 
 AppContext.propTypes = {
@@ -31,6 +31,7 @@ export default function AppContext({ children }) {
             const updatedHistory = history.map((product) => (product.id === value.id ? { ...product, quantity: product.quantity + 1 } : product));
             setHistory(updatedHistory);
         }
+        toast.success("Ban da them hang thanh cong");
     };
 
     const handleUpdatequantity = (type, product) => {

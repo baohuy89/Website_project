@@ -7,7 +7,8 @@ import { Routes, Route } from "react-router-dom";
 import BaseComponent from "./Component/BaseComponent";
 import CustommerComponent from "./Component/CustommerComponent";
 import AppContext from "./Component/AppContext";
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import ThankYouPage from "./Component/ThankYouPage";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
                     </Route>
                 </Routes>
             </AppContext>
+            < ToastContainer/>
         </>
     );
 }

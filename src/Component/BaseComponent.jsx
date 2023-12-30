@@ -118,7 +118,7 @@ function BaseComponent() {
                             <p>Không tìm thấy kết quả phù hợp</p>
                         ) : (
                             searchass.map((value, key) => (
-                                <Col key={key} sm={6} md={4} lg={4}>
+                                <Col key={key} sm={6} md={4} lg={3}>
                                     <SearchComponent searchDetail={setsearchproduct} value={value} />
                                 </Col>
                             ))
