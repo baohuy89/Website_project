@@ -1,0 +1,60 @@
+.card-container .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    margin: 10px;
+    width: 200px;
+}
+
+.card-container .image-detail {
+    cursor: pointer;
+}
+
+.card-container .image-detail img {
+    width: 100%;
+    height: auto;
+}
+
+.card-container .card h3 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.card-container .card p {
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-container .product-action {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.card-container .product-action button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.card-container .product-action button:hover {
+    background-color: #45a049;
+}
+
+/* Add a container for the cards to create a grid layout */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card-container .card {
+    width: calc(25% - 20px);
+}

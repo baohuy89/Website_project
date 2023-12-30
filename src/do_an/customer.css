@@ -1,12 +1,12 @@
-
-
 .mainer .row .head {
     margin: 20px;
     text-align: center;
 }
+
 .mainer .row .head h2 {
     font-weight: 600;
 }
+
 .mainer .row .head p {
     font-weight: 400;
     font-size: 18px;
@@ -16,22 +16,26 @@
     background-color: white;
     border-radius: 20px;
 }
+
 .mainer .row .from1 h2 {
     font-size: 18px;
     margin-left: 25%;
     padding-top: 20px;
 }
+
 .mainer .row .from1 input {
     margin-left: 25%;
     width: 50%;
     height: 40px;
     padding-left: 10px;
 }
+
 .mainer .row .from2 h2 {
     font-size: 18px;
     margin-left: 25%;
     padding-top: 20px;
 }
+
 .mainer .row .from2 input {
     margin-left: 25%;
     width: 50%;
@@ -39,6 +43,7 @@
     padding-left: 10px;
     margin-bottom: 30px;
 }
+
 .mainer .row .from3 button {
     margin-left: 25%;
     border-radius: 10px;
@@ -50,11 +55,14 @@
     background-color: #96ae00;
     color: white;
     transition: 0.5s;
+    margin-top: 20px;
 }
+
 .mainer .row .from3 button:hover {
     background-color: #2d2a6e;
 }
 
+/* Footer styles */
 .footer {
     margin-top: 120px;
     background-color: #2d2a6e;
@@ -62,33 +70,40 @@
     font-size: 14px;
     padding: 20px 0;
 }
+
 .footer h3 {
     margin-bottom: 30px;
     font-size: 14px;
     font-weight: 600;
     color: white;
 }
+
 .footer .email a {
     color: #96ae00;
     font-weight: 700;
 }
+
 .footer .social-media h4 {
     margin-top: 40px;
     font-size: 14px;
     font-weight: 600;
 }
+
 .footer .social-media .icon i {
     color: white;
     padding-right: 10px;
 }
+
 .footer .info ul {
     padding-left: 0;
 }
+
 .footer .info li {
     text-align: left;
     margin-bottom: 6px;
     list-style: none;
 }
+
 .footer .info li span {
     color: white;
 }
@@ -96,11 +111,13 @@
 .footer .info-1 ul {
     padding-left: 0;
 }
+
 .footer .info-1 li {
     list-style: none;
     margin-bottom: -12px;
     transition: 0.5s;
 }
+
 .footer .info-1 li:hover {
     transform: translateX(3%);
 }
@@ -110,13 +127,14 @@
     padding: 12px;
     margin-top: 30px;
     border-radius: 10px;
-
     position: relative;
 }
+
 .footer form input {
     border: none;
     font-size: 16px;
 }
+
 .footer form button {
     position: absolute;
     right: 10px;
@@ -130,9 +148,11 @@
     border: none;
     font-size: 16px;
 }
+
 .footer form button:hover {
     background-color: #2d2a6e;
 }
+
 @media (min-width: 768px) {
     .footer {
         padding: 40px 0;
@@ -152,5 +172,20 @@
     .footer .col-lg-3 {
         width: 48%;
         margin-bottom: 20px;
+    }
+}
+@media (max-width: 783px) {
+    .mainer .row .from3 button {
+        margin-left: 25%;
+        border-radius: 10px;
+        width: 30%;
+        text-align: center;
+        padding: 15px 20px;
+        margin-bottom: 20px;
+        border: none;
+        background-color: #96ae00;
+        color: white;
+        transition: 0.5s;
+        margin-top: 20px;
     }
 }

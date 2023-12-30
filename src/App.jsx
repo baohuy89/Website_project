@@ -8,6 +8,8 @@ import BaseComponent from "./Component/BaseComponent";
 import CustommerComponent from "./Component/CustommerComponent";
 import AppContext from "./Component/AppContext";
 
+import ThankYouPage from "./Component/ThankYouPage";
+
 function App() {
     return (
         <>
@@ -22,6 +24,8 @@ function App() {
                         <Route path="/Website_project/contact-us" element={<ContactusComponent />} />
                         <Route path="/Website_project/detail/:id" element={<DetailComponent />} />
                         <Route path="/Website_project/CustomerCart" element={<CustommerComponent />} />
+
+                        <Route path="/Website_project/thank-you" element={<ThankYouPage />}></Route>
                     </Route>
                 </Routes>
             </AppContext>

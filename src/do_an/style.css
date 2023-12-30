@@ -30,6 +30,9 @@ body {
 .navbar .nav-link:hover {
     color: green;
 }
+.navbar-nav {
+    position: absolute;
+}
 .nav-icon a {
     margin-right: 20px;
     background-color: rgb(215, 209, 209);

@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useEffect, useState ,} from "react";
 import PropTypes from "prop-types";
 
 export const Context = createContext();
@@ -19,12 +19,6 @@ export default function AppContext({ children }) {
     useEffect(() => {
         localStorage.setItem("cart", JSON.stringify(history));
     }, [history]);
-      
-    
-
-
-    
-
 
     const handleAddcart = (value) => {
 
@@ -52,15 +46,22 @@ export default function AppContext({ children }) {
             }
         } else {
             cart[index].quantity += 1;
-        }
-
-
-       
+        }    
         setHistory(cart);
     };
 
+
+
+
+
+
+   
+    
+   
+
+
     return (
-        <Context.Provider
+        <Context.Provider 
             value={{
                 history,
                 setHistory,
@@ -74,6 +75,7 @@ export default function AppContext({ children }) {
                 setCartItems,
                 detailProduct,
                 setDetailProduct,
+               
               
             }}
         >

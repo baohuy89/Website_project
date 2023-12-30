@@ -1,6 +1,6 @@
 import { Carousel } from "react-bootstrap";
 import "../do_an/style.css";
-import { CaroselHome, cateHome, healthyHome, bannerHome, newsHome } from "../Component/ImgComponent/ImgComponent";
+import { CaroselHome, healthyHome, bannerHome, newsHome } from "../Component/ImgComponent/ImgComponent";
 import "../App.css";
 
 function HomeComponent() {
@@ -25,7 +25,7 @@ function HomeComponent() {
                     </Carousel>
                 </div>
             </div>
-            <div className="cate">
+            {/* <div className="cate">
                 <div className="container">
                     <div className="row">
                         {cateHome &&
@@ -42,7 +42,7 @@ function HomeComponent() {
                             ))}
                     </div>
                 </div>
-            </div>
+            </div> */}
             <div className="healthy">
                 <div className="container">
                     <div className="row">
@@ -120,7 +120,7 @@ function HomeComponent() {
             <div className="news">
                 <div className="container">
                     <div className="headline-1">
-                        <h4>~ Đọc Blog của chúng tôi ~</h4>
+                        <h4>~ Blog của chúng tôi ~</h4>
                         <h2>Bài viết mới nhất của chúng tôi</h2>
                         <p>Bài viết được chúng tôi cập nhật hằng ngày.</p>
                     </div>
@@ -135,9 +135,6 @@ function HomeComponent() {
                                         <div className="card-body">
                                             <h4>{value.title}</h4>
                                             <p>{value.titleImg}</p>
-                                            <div className="card-link">
-                                                <a href="">Đọc thêm</a>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
